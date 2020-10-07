@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFDAB9"
+    android:fitsSystemWindows="true"
+    tools:context=".LoginActivity">
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:text="Login Aplikasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="normal|bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="206dp"
+            android:layout_height="182dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:src="@drawable/usericon" />
+
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="391dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="37dp"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="389dp"
+            android:layout_height="68dp"
+            android:layout_below="@+id/username"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="#FF0000"
+            android:text="@string/login"
+            android:textColor="@android:color/white" />
+
+
+
+    </LinearLayout>
+</ScrollView>
